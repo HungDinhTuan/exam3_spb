@@ -133,7 +133,7 @@ public class StudentController extends HttpServlet {
         String action = req.getParameter("action");
         switch (action) {
             case "insert": addNewStudent(req, resp); break;
-            case "update": break;
+            case "update": updateStudent(req, resp); break;
         }
     }
 
