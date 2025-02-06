@@ -14,7 +14,7 @@ public class StudentScoreDao {
         }
     }
 
-    public StudentScore getStudentScoreById(int studentScoreId) {
+    public StudentScore getStudentScoreByStudentId(int studentScoreId) {
         try(Session session = HibernateUtil.getSessionFactory().openSession()) {
             return session.get(StudentScore.class, studentScoreId);
         }

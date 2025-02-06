@@ -52,11 +52,11 @@ public class StudentDao {
         }
     }
 
-    public void deleteStudent(Student student) {
+    public void deleteStudent(Integer studentId) {
         Transaction tx = null;
         try (Session session = HibernateUtil.getSessionFactory().openSession()) {
             tx = session.beginTransaction();
-            Student existingStudent = session.get(Student.class, student.getStudentId());
+            Student existingStudent = session.get(Student.class, studentId);
             if (existingStudent != null) {
                 session.delete(existingStudent);
             }
