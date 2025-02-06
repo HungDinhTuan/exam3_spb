@@ -39,8 +39,8 @@
             <td><%= srq.getGrade() %></td>
             <td></td>
             <td>
-                <a href="?action=edit&playerId=<%= srq.getStudentId() %>" class="btn btn-primary">Edit</a>
-                <a href="?action=delete&playerId=<%= srq.getStudentId()%>" class="btn btn-danger" onclick="return confirm('Are you sure you want to delete this player?');">Delete</a>
+                <a href="?action=edit&studentId=<%= srq.getStudentId() %>" class="btn btn-primary">Edit</a>
+                <a href="?action=delete&studentId=<%= srq.getStudentId()%>" class="btn btn-danger" onclick="return confirm('Are you sure you want to delete this student?');">Delete</a>
             </td>
         </tr>
         <%}%>
