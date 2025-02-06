@@ -54,11 +54,11 @@
         </div>
         <div class="mb-3">
             <label class="form-label">Score 1</label>
-            <input type="number" name="score1" class="form-control">
+            <input type="number" name="score1" class="form-control" value="<%= studentScore.getScore1() %>">
         </div>
         <div class="mb-3">
             <label class="form-label">Score 2</label>
-            <input type="number" name="score2" class="form-control">
+            <input type="number" name="score2" class="form-control" value="<%= studentScore.getScore2() %>">
         </div>
         <button type="submit" class="btn btn-success">Submit</button>
     </form>
